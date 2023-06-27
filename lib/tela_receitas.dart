@@ -62,7 +62,7 @@ class _TelaReceitaState extends State<TelaReceita> {
                   );
                   if(id != null){
                     widget.bd!.removerReceita(id);
-                    cont--
+                    cont--;
                   }
                   carregarReceitas();
                 },
