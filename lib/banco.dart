@@ -143,8 +143,24 @@ class BancoDeDados {
 
   Future<void> inserirUsuario(Usuario usr) async {
     final db = await database;
+    usr.id = DateTime.now().millisecondsSinceEpoch;
 
     db!.insert("usuario", usr.toMap());
+  }
+
+  Future<void> removerUsuario(int id) async {
+    final db = await database;
+    await db!.delete("usuario", where: "id = ?", whereArgs: [id]);
+  }
+
+  Future<void> atualizarUsuario(Usuario usr) async {
+    final db = await database;
+    await db!.update(
+      "usuario",
+      usr.toMap(),
+      where: 'id = ?',
+      whereArgs: [usr.id],
+    );
   }
 
 }
