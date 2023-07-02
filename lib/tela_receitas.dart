@@ -60,11 +60,11 @@ class _TelaReceitaState extends State<TelaReceita> {
                           builder: (context) => DetalhesReceitaScreen(rec: rec[cont], bd: widget.bd,)
                       )
                   );
-                  if(id != null){
+                  if (id != null) {
                     widget.bd!.removerReceita(id);
-                    cont--;
+                    cont = 0;
+                    carregarReceitas();
                   }
-                  carregarReceitas();
                 },
                 child: rec.isEmpty ? const Text("NENHUMA RECEITA CADASTRADA!") : Image.network(rec[cont].imagemUrl)
             ),
