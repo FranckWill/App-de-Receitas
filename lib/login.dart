@@ -172,8 +172,8 @@ class _TelaLoginState extends State<TelaLogin> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              width: 250,
-              height: 250,
+              width: 200,
+              height: 200,
               child: Image.asset('images/receita.png'),
             ),
             Form(
