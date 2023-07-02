@@ -44,17 +44,17 @@ class _HomeState extends State<Home> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.food_bank_outlined),
-            label: "receitas",
+            label: "Receitas",
             backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.list),
-            label: "listagem",
+            label: "Listagem",
             backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.star),
-            label: "favorito",
+            label: "Favorito",
             backgroundColor: Colors.blue,
           ),
         ],
