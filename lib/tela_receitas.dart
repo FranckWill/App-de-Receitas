@@ -66,9 +66,9 @@ class _TelaReceitaState extends State<TelaReceita> {
                   }
                   carregarReceitas();
                 },
-                child: rec.isEmpty ? const Text("carregando") : Image.network(rec[cont].imagemUrl)
+                child: rec.isEmpty ? const Text("NENHUMA RECEITA CADASTRADA!") : Image.network(rec[cont].imagemUrl)
             ),
-            rec.isEmpty ? const Text("carregando") : Text(rec[cont].titulo,
+            rec.isEmpty ? const Text("Nenhuma Receita Cadastrada!") : Text(rec[cont].titulo,
               style: const TextStyle(
                   fontSize: 18
               ),
