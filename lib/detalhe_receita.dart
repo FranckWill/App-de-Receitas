@@ -121,7 +121,7 @@ class _DetalhesReceitaScreenState extends State<DetalhesReceitaScreen> {
                       widget.rec;
                     });
                   },
-                  child: const Text("Editar")
+                  child: const Text("Salvar")
               ),
               ElevatedButton(
                   onPressed: (){
@@ -159,15 +159,14 @@ class _DetalhesReceitaScreenState extends State<DetalhesReceitaScreen> {
         children: [
           Image.network(widget.rec!.imagemUrl),
           ListTile(
-            title: const Text("Titulo", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
-            subtitle: Text(widget.rec!.titulo, style: const TextStyle(fontSize: 20)),
+            title: Text(widget.rec!.titulo, style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
           ),
           ListTile(
-            title: const Text("Ingrediente", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            title: const Text("Ingredientes", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
             subtitle: Text(widget.rec!.ingredientes, style: const TextStyle(fontSize: 20)),
           ),
           ListTile(
-            title: const Text("Instruções", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+            title: const Text("Instruções", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
             subtitle: Text(widget.rec!.instrucoes, style: const TextStyle(fontSize: 20)),
           ),
         ],
