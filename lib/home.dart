@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Receitas"),
+        title: const Text("RECEITAS DA HORA!"),
       ),
       drawer: const DrawerMenu(),
       body: Center(
